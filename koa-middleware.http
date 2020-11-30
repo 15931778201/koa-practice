@@ -1,0 +1,11 @@
+GET  http://localhost:3000/api/api?name=Hendry&age=26
+User-Agent: rest-client
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6,zh-CN;q=0.4
+Content-type: application/json
+
+  {
+    "name":"Hendry",
+    "salary":"61888",
+    "age":"26"
+  }
+
