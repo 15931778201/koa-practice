@@ -1,0 +1,11 @@
+POST   http://localhost:3000/api/user HTTP/1.1
+User-Agent: rest-client
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6,zh-CN;q=0.4
+role: admin
+Content-type: application/json
+
+{
+  "name":"imooc",
+  "email":"imocc@email.com"
+}
+
