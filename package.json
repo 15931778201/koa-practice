@@ -5,13 +5,14 @@
   "main": "app.js",
   "dependencies": {
     "@babel/node": "^7.12.6",
-    "koa": "^2.0.0",
+    "koa": "^2.13.1",
     "koa-body": "^4.2.0",
     "koa-combine-routers": "^4.0.2",
     "koa-helmet": "^6.0.0",
     "koa-router": "^10.0.0",
     "koa-static": "^5.0.0",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "webpack-dev-server": "^2.11.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -24,7 +25,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node src/app.js"
+    "start": "nodemon --exec babel-node src/app.js",
+    "webpack:debug": "npx node --inspect-brk  ./node_modules/webpack/bin/webpack --inline--progress"
   },
   "keywords": [],
   "author": "",
