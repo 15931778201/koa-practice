@@ -1,7 +1,3 @@
-const combineRoutes=require('koa-combine-routers')
-const aroutes=require('./aRoutes')
-const broutes=require('./bRoutes')
-module.exports=combineRoutes(
-    aroutes,
-    broutes
-)
+import combineRoutes from 'koa-combine-routers'
+import demoRoutes from './demoRoutes'
+export default combineRoutes(demoRoutes)
